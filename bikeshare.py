@@ -179,7 +179,7 @@ def get_city():
         elif city.lower().strip() == 'washington':
             return 'washington'
         else:
-            print('Maybe you made a typo. Please enter the correct city name\n')
+            print('Maybe you made a typo. Please enter the correct city name:\n')
     return city
 
 
