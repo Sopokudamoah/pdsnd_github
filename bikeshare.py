@@ -140,22 +140,18 @@ def user_stats(df):
     print('\nThe count of subscriber is {} and Customer is {}'.format(sub, cust))
 
     # Display counts of gender
-    try:
+    if 'Gender' in list(df.columns):
         male = (df['Gender'] == 'Male').sum()
         female = (df['Gender'] == 'Female').sum()
         print('\nThe count of male is {} and female is {}'.format(male, female))
-    except:
-        pass
     # Display earliest, most recent, and most common year of birth
-    try:
+    if 'Birth Year' in list(df.columns):
         dob_early = int(df['Birth Year'].min())
         dob_recent = int(df['Birth Year'].max())
         dob_common = int(df['Birth Year'].mode())
         print('\nThe most earliest year of birth is {}'.format(dob_early))
         print('\nThe most recent year of birth is {}'.format(dob_recent))
         print('\nThe most common year of birth is {}'.format(dob_common))
-    except:
-        pass
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
