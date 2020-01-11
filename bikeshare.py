@@ -135,15 +135,17 @@ def user_stats(df):
     start_time = time.time()
 
     # Display counts of user types
-    sub = (df['User Type'] == 'Subscriber').sum()
-    cust = (df['User Type'] == 'Customer').sum()
-    print('\nThe count of subscriber is {} and Customer is {}'.format(sub, cust))
+    if 'User Type' in list(df.columns):
+        sub = (df['User Type'] == 'Subscriber').sum()
+        cust = (df['User Type'] == 'Customer').sum()
+        print('\nThe count of subscriber is {} and Customer is {}'.format(sub, cust))
 
     # Display counts of gender
     if 'Gender' in list(df.columns):
         male = (df['Gender'] == 'Male').sum()
         female = (df['Gender'] == 'Female').sum()
         print('\nThe count of male is {} and female is {}'.format(male, female))
+
     # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in list(df.columns):
         dob_early = int(df['Birth Year'].min())
