@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
+9th January, 2020
 
 ### Project Title
-Replace the Project Title
+U.S. Bikeshare Data Analysis
 
 ### Description
-Describe what your project is about and what it does
+As part of the Programming for Data Science Udacity Nanodegree program, this project is aimed at using python to understand U.S. bikeshare data.
 
 ### Files used
-Include the files used
+The following files contains the data to be analysed:
+new_york_city.csv
+chicago.csv
+washington.csv
+
+The follwing file is the script file in python for analysis the data:
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+To all my mentors and colleagues who helped me to make this project a success!
