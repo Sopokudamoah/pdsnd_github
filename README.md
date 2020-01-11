@@ -1,5 +1,5 @@
 ### Date created
-9th January, 2020
+9th January 2020
 
 ### Project Title
 U.S. Bikeshare Data Analysis
@@ -13,7 +13,7 @@ new_york_city.csv
 chicago.csv
 washington.csv
 
-The follwing file is the script file in python for analysis the data:
+The following file is the script file in python for analysis the data:
 bikeshare.py
 
 ### Credits
